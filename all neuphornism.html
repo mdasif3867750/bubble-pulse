@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="theme-color" content="#23DB7B">
+      <title>ui type</title>
+   <style type="text/css">
+body {
+   margin:0;padding:0;
+   background-color: #E7EBEC;
+} 
+h1 {
+   width:100px;height:100px;
+   background-color: #E7EBEC;
+   border-radius:20px;
+   margin: 50px;
+   box-shadow:2px 2px 10px rgba(0,0,0,0.3),-5px -5px 5px #fff;
+   text-align: center;
+   line-height:100px;
+   color:#23DB7B;
+}
+#process {
+   width:90%;height:10px;
+   box-shadow:2px 2px 10px rgba(0,0,0,0.4),-5px -5px 5px #fff;
+   margin-left: 20px;
+   border-radius:50px;
+   overflow: hidden;
+   position: relative;
+}
+#process:before {
+   content:'';
+   position: absolute;
+   top:0;left:0;
+   width:50%;height:100%;
+   background-image: linear-gradient(45deg,#04BF70,#C6FF00);
+   border-radius:0 50px 50px 0;
+}
+#bar div {
+   width:100%;height:140px;
+   background-image: linear-gradient(45deg,#66BB6A,#23DB7B);
+    
+    border-radius:50px;
+    position: relative;
+   transform: translateY(50px);
+}
+#bar {
+   width:35px;height:190px;
+   border-radius:50px;
+   
+   box-shadow:inset 2px 2px 10px rgba(0,0,0,0.3),inset -5px -5px 5px #fff;
+   z-index:;
+   margin: 60px;
+}
+.bx {
+  width:100px;height:100px;
+  background: #E7EBEC;
+  box-shadow:0 5px 15px #000;
+  border-radius:15px;
+  margin:40px;
+}
+.bx.a {
+  box-shadow:5px 5px 15px #bbb,-5px -5px 15px #fff;
+}
+#bh {
+  box-shadow:5px 5px 15px #bbb,-5px -5px 10px #fff;
+  background:linear-gradient(-45deg,#DEDEDE 10%,#F9F9F9 90%);
+}
+.bx.c {
+  box-shadow:5px 5px 15px #bbb,-5px -5px 15px #fff;
+  background:linear-gradient(100deg,#DEDEDE 10%,#E7EBEC 90%);
+}
+.bx.d {
+  box-shadow:5px 5px 15px #bbb,-5px -5px 15px #fff,inset 8px 8px 10px -5px rgba(0,0,0,.1);
+  background-color: #0dd;
+}
+   </style>
+   </head>
+   <body>
+      <h1>Aa</h1>
+      <div id="process"></div>
+      <div id="bar"><div></div></div>
+      
+      <div class="bx a"></div>
+      <div class="bx b" id="bh"></div>
+      <div class="bx c"></div>
+      <div class="bx d"></div>
+   </body>
+</html>
